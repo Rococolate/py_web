@@ -65,7 +65,6 @@ def select_date():
 
 if __name__ == "__main__":
     initDB()
-    # update_person("张三",16355466773,475883,"广州湛江","单身")
     # closeDB()
     # el = select_date()
     # for i in el:
