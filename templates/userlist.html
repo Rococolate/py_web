@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+    user-scalable=0;">
+    <title>联系列表</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body bgcolor="#add8e6" >
+    <div id="web_bg" style="position:absolute; width:0%; height:0%; z-index:-1">
+<img style="position:fixed;" src="/static/img/groynes.jpg" height="100%" width="100%" />
+</div>
+
+<h3>联系方式</h3>
+{% for i in range(all_user_number) %}
+    <p>{{ all_user_list[i][0] }} {{ all_user_list[i][1] }} {{ all_user_list[i][2] }} {{ all_user_list[i][3] }}
+    {{ all_user_list[i][4] }}</p>
+{% endfor %}
+
+</body>
+</html>

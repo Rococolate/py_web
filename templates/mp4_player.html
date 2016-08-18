@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='px-video.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <title>Mp4播放</title>
+</head>
+<body>
+<div class="px-video-container" id="myvid">
+    <div class="px-video-img-captions-container">
+        <div class="px-video-captions hide" aria-hidden="true"></div>
+        <video width="640" height="360" poster="../static/images/logo_347x50_PPa11y.png" controls>
+            <source src="../static/video/1、CSS基础-介绍及语法.mp4" type="video/mp4" />
+            <div>
+                <a href="../static/video/1、CSS基础-介绍及语法.mp4">
+                </a>
+            </div>
+        </video>
+    </div>
+    <div class="px-video-controls"></div>
+</div>
+
+<video webkit-playsinline width="1" height="1" class="vplayinside notaplink" x-webkit-airplay controls loop="loop"
+       src="../static/video/1、CSS基础-介绍及语法.mp4"></video>
+</body>
+</html>

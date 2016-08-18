@@ -1,0 +1,83 @@
+body{
+	font-family: sans-serif;
+	background: #fcfcfc;
+}
+
+
+
+
+
+h2{ 
+font-size: 1.2em; 
+}
+
+.page{ 
+       margin: 2em auto;	
+       width: 35em; 
+       border: 5px solid #fff;
+       padding: 0.8em; 
+}
+
+.inventory{
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+}
+
+.inventory li{ 
+	   margin: 0.8em 1.2em; 
+}
+
+.inventory li h2{ 
+	   margin-left: -1em; 
+}
+
+.add-item{ 
+	   font-size: 0.9em; 
+	   border-bottom: 1px solid #ccc; 
+}
+
+.add-item dl{
+	  font-weight: bold; 
+}
+
+.metanav{ 
+	  text-align: right; 
+	  font-size: 0.8em; 
+	  padding: 0.3em;
+	  margin-bottom: 1em;
+	  background: #fafafa;
+} 
+
+.flash{ 
+	background: #cee5F5; 
+	padding: 0.5em;
+	border: 1px solid #aacbe2; 
+}
+
+.error{ 
+	background: #f0d6d6; 
+	padding: 0.5em; 
+}
+
+#content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 240px;
+    width: 50%;
+}
+
+#content2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 240px;
+    width: 50%;
+}

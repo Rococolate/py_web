@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block contact %}
+<h3>联系方式</h3>
+{% for i in range(all_user_number) %}
+    <p>{{ all_user_list[i][0] }} {{ all_user_list[i][1] }} {{ all_user_list[i][2] }} {{ all_user_list[i][3] }}</p>
+{% endfor %}
+{% endblock %}

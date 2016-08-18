@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+    user-scalable=0;">
+    <title>联系方式登记</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body bgcolor="#add8e6" >
+    <div id="web_bg" style="position:absolute; width:0%; height:0%; z-index:-1">
+<img style="position:fixed;" src="/static/img/groynes.jpg" height="100%" width="100%" />
+</div>
+    <form action="{{ url_for('add_user') }}" method=post>
+    <dl>
+        <div id="content">
+            <dt>姓名:
+        <dd><input type=text name=name autofocus="autofocus">
+        <dt>电话:
+        <dd><input type=text name=phone>
+        <dt>QQ:
+        <dd><input type=text name=qq>
+        <dt>地址:
+        <dd><input type=text name=address>
+        <dt>状态:
+        <input type="radio" name="marriage" value="单身" />单身
+        <input type="radio" name="marriage" value="已婚" />已婚
+        <dd><input type=submit value=提交>
+            <dd><p align="center"><a href="userlist">查看小伙伴们的联系方式</a></p></dd>
+
+            </div>
+    </dl>
+
+    </form>
+</body>
+</html>

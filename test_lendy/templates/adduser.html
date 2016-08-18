@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联系方式登记</title>
+    <form action="{{ url_for('adduser') }}" method=post>
+    <dl>
+      <dt>姓名:
+      <dd><input type=text name=name>
+        <dt>电话:
+      <dd><input type=text name=phone>
+        <dt>QQ:
+      <dd><input type=text name=qq>
+        <dt>地址:
+      <dd><input type=text name=address>
+        <dt>状态:
+      <input type="radio" name="marriage" value="单身" />单身
+      <input type="radio" name="marriage" value="已婚" />已婚
+      <dd><input type=submit value=提交>
+    </dl>
+    </form>
+</head>
+<body>
+
+</body>
+</html>

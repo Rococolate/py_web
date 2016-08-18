@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+    user-scalable=0;">
+    <title>已经提交</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body >
+    <div id="web_bg" style="position:absolute; width:0%; height:0%; z-index:-1">
+<img style="position:fixed;" src="/static/img/groynes.jpg" height="100%" width="100%" />
+</div>
+    <div id="content">
+    <form action="{{ url_for('success') }}" method=post>
+    <dl>
+    <h1 align="center">提交成功!</h1>
+        <p align="center"><a href="userlist">查看小伙伴们的联系方式</a></p>
+    </dl>
+    </form>
+    </div>
+</body>
+</html>
