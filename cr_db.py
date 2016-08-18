@@ -3,7 +3,6 @@ import sqlite3 as sql
 
 def initDB(filename=None):
     """
-    连接数据库
     :param filename:
     :return:
     """
@@ -22,7 +21,7 @@ def initDB(filename=None):
 
 def create_table():
     """
-    建立contact表
+    
     :return:
     """
     query = '''create TABLE contact(
@@ -34,7 +33,6 @@ VARCHAR(255) not null
 
 def update_person(name, phone, qq, address, marriage):
     """
-    插入数据
     :param name:
     :param phone:
     :param qq:
@@ -49,7 +47,6 @@ def update_person(name, phone, qq, address, marriage):
 
 def closeDB():
     """
-    关闭数据库连接
     :return:
     """
     try:
